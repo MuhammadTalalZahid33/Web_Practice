@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an example webpage using meta tags."> <!-- SEO description -->
+
+    
+    <title>Practice Document</title>
+    <link rel="shortcut icon" 
+    href="https://marketplace.canva.com/EAGJmZcXb9A/1/0/1600w/canva-blue-and-black-illustrative-gaming-esports-logo-TOClzfKQMvU.jpg" 
+    type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="../JS/script.js"></script>
+
+</head>
+<body>
+
+
+    <!-- Nav-bar -->
+ 
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Tutorials</a></li>
+            <li><a href="">References</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- img tag -->
+    <h2>Image File</h2>
+    <img src="map.jpg" height="200px" width="360" alt="map picture">
+
+    <br>
+    <br>
+
+    <!-- audio tag -->
+    <h2>Audio File</h2>
+    <audio src="../files/birds-singing-audio-tune-165801.mp3" controls></audio>
+
+    <br>
+    <br>
+
+    <!--Video Tag  -->
+    <h2>Video File</h2>
+    <video src="../files/mixkit-bird-singing-in-a-tree-2560-hd-ready.mp4" controls height="300px"></video>
+
+    <br>
+    <br>
+
+    <!-- iframe tag -->
+    <iframe src="https://www.youtube.com/embed/CsPlk4eNgEU" 
+    frameborder="0" height="300px" width="450px" controls></iframe>
+
+    <!-- Autoplay and Mute -->
+    <iframe src="https://www.youtube.com/embed/af62B4lWuLo?autoplay=1&mute=1&vq=small" 
+    width="450" height="300" loading="lazy" ></iframe>
+
+
+
+    <br><br> 
+    <!-- Use a Thumbnail Placeholder (Loads Video on Click) -->
+
+    <div id="videoContainer" style="position: relative; width: 450px; height: 300px;">
+        <img src="https://img.youtube.com/vi/af62B4lWuLo/hqdefault.jpg" 
+             style="width: 100%; height: 100%; cursor: pointer;" 
+             onclick="loadVideo()">
+    </div>
+    
+    <script>
+    function loadVideo() {
+        document.getElementById('videoContainer').innerHTML = 
+            '<iframe width="450" height="300" src="https://www.youtube.com/embed/af62B4lWuLo?autoplay=1&mute=1" allowfullscreen></iframe>';
+    }
+    </script>
+    
+
+    
+    <!-- Tables -->
+
+    <!-- table>(tr>td*3)*3 -->
+
+    <table class="tablet">
+        <tr>
+            <td>Serial No.</td>
+            <td>Name </td>
+            <td>Department</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Talal</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Umar</td>
+            <td>Software Engineering</td>
+        </tr>
+    </table>
+
+    <!-- UN-ORDERED LIST -->
+    
+     <ul>
+        <li>fsdf</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+     </ul>
+
+    <!-- ORDERED LIST  -->
+
+     <ol style="border: 2px solid black; width: 170px;">
+        <li>Lorem.</li>
+        <li>fsdfs</li>
+        <li>fdfsdfs</li>
+     </ol>
+
+    <!-- DISCRIPTION LIST -->
+    
+    <dl>
+        <dt>Milk</dt>
+        <dd>- some you should never say no to...</dd>
+        <dt>Burger</dt>
+        <dd>- a term used to define a particular kinda food in the category of fast foods.</dd>
+        <dt>Lorem</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium qui nulla asperiores ab rem modi distinctio sunt magnam illo.</dd>
+    </dl>
+
+
+
+    <a href="https://www.youtube.com/" target="_blank">
+        <img  style="height: 50px; width: 90px;"  src="map.jpg" alt="A picture"> 
+    </a>
+    
+    <ul>
+        <li><a href="https://www.youtube.com/">youtube link(website)</a></li>
+        <li><a href="mailto:talalzahid912@gmail.com">Email</a></li>
+        <li><a href="tel:+923450424376">Phone Num</a></li>
+    </ul>
+
+    <pre>
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Veritatis quidem asperiores mollitia
+        quia tenetur quos, consequatur perspiciatis iure eligendi vero alias voluptatum repudiandae
+        molestiae. Deleniti soluta 
+        sequi quos facilis aliquid!
+    </pre>
+    
+
+    <!-- ul>(li>a)*3 -->
+    <ul>
+        <li><a href="#link1">link 1</a></li>
+        <li><a href="#link2">link 2</a></li>
+        <li><a href="#link3">link 3</a></li>
+    </ul>
+
+
+    <!-- p#link1 / p.styling -->
+    <p class="styling">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, pariatur?</p>
+     
+    <p id="link1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut expedita facilis sint numquam possimus sapiente maiores animi nobis tempora sit dolores unde, voluptatibus ipsa aperiam adipisci similique iusto magnam explicabo cum?</p>
+    <p id="link2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic corporis dolorem quod.</p>
+    <p id="link3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam necessitatibus, earum cupiditate sit saepe ipsa amet aperiam ipsam aspernatur cumque dolorem possimus illum ab odio! Libero debitis labore vel assumenda! Delectus dignissimos et tempore, eius assumenda asperiores officiis libero consequuntur corrupti quas blanditiis, modi facilis!</p>
+
+    
+
+    <!-- Frequently Asked Questions -->
+     <!-- details, summary tags -->
+
+     <details>
+        <summary>what is your name?</summary>
+        <p>my name is Talal.</p>
+     </details>
+
+     <details>
+        <summary>what is your roll number?</summary>
+        <p>my roll number is 33.</p>
+     </details>
+
+     <details>
+        <summary>what kind of life do you want to live?</summary>
+        <p>i just want to live my days in peace...</p>
+     </details>
+
+
+
+
+
+
+
+
+</body>
+</html>
