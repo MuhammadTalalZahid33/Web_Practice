@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            height:100vh;   
+            background-color: aquamarine;
+            /* padding: 1%; */
+            display:flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            /* align-items: center; */
+            /* align-content:center; */
+            
+            
+        }
+        div li{
+            display: inline;
+        }
+
+        .container .logo{
+            float: left;
+        }
+
+        .item{
+            height: 50px;
+            width: 50px;
+            /* flex-grow: 1; */
+            /* flex-shrink: 2; */
+            
+        }
+
+        #i1{
+            color: red;
+            /* flex-grow: 5; */
+            /* flex-shrink: 3; */
+            /* flex-basis: 300px; */
+            /* flex: 3 2 200px; */
+            /* align-self: center; */
+            
+            
+        }
+
+        /* #i2{
+            order: 5;
+            flex-shrink: 4;
+        }
+        #i3{
+            
+            order: -1;
+        } */
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <!-- <div class="logo">PicLogo</div> -->
+        <li class="item" id="i1" style="background-color: bisque;">Home</li>
+        <li class="item" id="i2" style="background-color: red;">Tutorial</li>
+        <li class="item" id="i3" style="background-color: green;">About</li>
+        <li class="item" style="background-color: yellow;">Help</il>
+        <li class="item" style="background-color: brown;">Login</li>
+        <!-- <div class="logo1">Logo</div> -->
+    </div>
+    
+
+</body>
+</html>
