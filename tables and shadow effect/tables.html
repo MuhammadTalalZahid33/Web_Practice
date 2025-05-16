@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <table border="1" style="background-color:yellow;">
+    <thead>
+        <th>column 1</th> 
+        <th>column 2</th>
+        <th>column 3</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">r1 c1</td>
+            <td>r1 c2</td>
+            <td>r1 c3</td>
+        </tr>
+        <tr>
+            
+            <td>r2 c2</td>
+            <td>r2 c3</td>
+        </tr>
+        <tr>
+            <td colspan="3">r3 c1</td>
+            
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">Total</td>
+            <th>45</th>
+        </tr>
+    </tfoot>
+    </table>
+
+    <br/>
+
+    <!-- table>(thead>th*5)+(tbody>(tr>td*4)*3)+tfoot>tr>td -->
+    <table border="1">
+        <thead>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>fdffs</td>
+                <td>nghggfg</td>
+                <td>2312</td>
+                <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>fdffs</td>
+                <td>hdhdhd</td>
+                <td>5454</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>gdfh</td>
+                <td>yrtrtyt</td>
+                <td>6565</td>
+            </tr><tr>
+                <td>4</td>
+                <td>gredfh</td>
+                <td>yrtrtyt</td>
+                <td>8435</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>23445</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+
+    <br/>
+
+    <table border="1">
+        
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>
+        
+        
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+                
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">4324</td>
+                <td rowspan="2">543534</td>
+                <td>Introduciton to xml</td>
+            </tr>
+
+            <tr>
+                <td>Validity:dtd and relax ng</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>4324</td>
+                <td>43423</td>
+                <td>Xpath</td>
+            </tr>
+            
+            <tr>
+                
+                <td>3423</td>
+                <td>4324</td>
+                <td rowspan="2">xsl transformation</td>
+            </tr>
+            <tr>
+                
+                <td>5345</td>
+                <td>65645</td>
+                
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>4545</td>
+                <td>54354</td>
+                <td>xsl formatting objects</td>
+            </tr>
+        
+    </table>
+
+
+    <br/>
+
+    <table border="1">
+        <thead>
+        <tr>
+            
+            <td colspan="2">fdfsdfs</td>
+            <td>fsdffsdfsdfsdfsdd</td>
+            <td>erwerw</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            
+            <td>fsdfsffdsfsdf</td>
+            <td colspan="2">gsdfsdf</td>
+            <td>fsdfd</td>
+        </tr>
+        <tr>
+            <th>fsdfsdf</th>
+            <td>dsfsdfsd</td>
+            <th colspan="2">fsdfsdf</th>
+            
+        </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>

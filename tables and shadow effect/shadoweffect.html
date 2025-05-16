@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            --primary-color: blue;
+            --custom-width:300px;
+        }
+        /* :root{
+            --custom-width:300px;
+        } */
+        .container{
+            height: 100vh;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            /* --default-width:20px: */
+            border: 2px solid black;
+            height: 300px;
+            /* width: 300px; */
+            width: var(--custom-width);
+            background: greenyellow;
+            /* box-shadow: 10px 5px red; */
+            /*        x-offset     y-offset   blurr-radius   spread-radius     shadow-color */
+            /* box-shadow: 10px        5px         30px            50px            red; */
+            /* box-shadow: 10px 5px 50px red; */
+            /* box-shadow: 10px 5px 6px red,15px 9px 6px green ;  */
+            /* box-shadow: inset -10px -5px 40px red; */
+            /* box-shadow: inset 10px 5px 30px red; */
+            box-shadow: 10px 5px 40px red, -15px -9px 60px var(--primary-color); 
+        }
+
+        #head1{
+            /* text-shadow: 10px 5px 2px blue; */
+            /* text-shadow: 10px 5px  blue; */
+            /* text-shadow: blue 10px 5px 2px ; */
+            /* text-shadow: 10px 5px; */
+            text-shadow: 10px 5px 2px;
+
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 id="head1">Hello, Paragraph</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates corrupti aperiam, nisi ducimus assumenda ratione ut facere impedit blanditiis quisquam voluptate eius incidunt perspiciatis nihil recusandae? Corrupti similique quia quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt est consectetur ipsa impedit sed, voluptas error nemo sequi repudiandae tempore maxime provident, culpa nesciunt eaque sapiente aperiam, nisi dolorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eaque quod ad cupiditate </p>
+        </div>
+    </div>
+</body>
+</html>
