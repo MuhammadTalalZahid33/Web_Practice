@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: antiquewhite;
+            height: 100vh;
+            border: 1px solid black;
+
+            
+        }
+
+        .box{
+            background-color: red;
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+            border: 2px solid yellow;
+            position: relative;
+            display: flex;
+            margin: auto;  
+        
+
+            /* ****************** TRANSITION *************** */
+
+            /* transition-duration: 1s;
+            transition-delay: 0s;
+            transition-property: all;
+            transition-timing-function: ease-in; */
+
+            /* *********** SHORT-HAND NOTATION ************ */
+            /* property name | duration | easing function | delay */
+            transition: width 1s ease-in 0s, height 3s;
+
+            
+
+        }
+
+        .box:hover{
+            width: 400px;
+            height: 400px;
+            color: whitesmoke;
+            background-color: yellowgreen;
+            border: 4px solid purple;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+                kfjkljf
+        </div>
+    </div>
+
+</body>
+</html>

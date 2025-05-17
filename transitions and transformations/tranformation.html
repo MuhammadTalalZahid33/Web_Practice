@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: antiquewhite;
+            height: 100vh;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .box{
+            background-color: red;
+            margin: 20px;
+            height: 200px;
+            width: 200px;
+            border: 2px solid yellow;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             
+        
+            transition: all 1s ease-in 0s;
+
+        }
+
+        .box:hover{
+           transform:rotate(360deg);
+           transform: scale(2);
+           transform: translate(-500px, 500px);
+           transform: skewX(30deg);
+           transform: matrix(1, -0.3, 0, 1, 0, 50);
+        }
+
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            I am box
+        </div>
+    </div>
+
+</body>
+</html>
