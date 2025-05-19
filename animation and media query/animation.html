@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            /* width: 100vw; */
+            background-color: burlywood;
+            border: 3px solid black;
+            /* overflow: auto; */
+        }
+
+        .box1 {
+            border: 2px solid black;
+            height: 60px;
+            width: 250px;
+            border-radius: 50px;
+            margin: 10px;
+            padding: 30px;
+            background-color: red;
+            position: relative;
+
+            /* Animation */
+            /****************** animation name */
+            animation-name: LeftMovement;
+            /****************** total time the animation takes */
+            animation-duration: 4s;
+            /****************** delay for the start of an animation */
+            animation-delay: 1s;
+            /****************** the number of times an animation should run. */
+            animation-iteration-count: 3;
+            /****************** specifies whether an animation should be played forwards, backwards or in alternate cycles. */
+            animation-direction: alternate;
+            /* ***************** specifies the speed curve of the animation ****** BEHAVIOR OF THE CURVE ***** */
+            /* animation-timing-function: cubic-bezier(0, 0.33, 1,-0.52); */
+            animation-timing-function: linear;
+            /****************** sets how a CSS animation applies styles to its target before and after its execution.*/
+            animation-fill-mode: both;
+            /****************** property sets whether an animation is running or paused. */
+            animation-play-state: running;
+            /****************** specifies the timeline that is used to control the progress of a CSS animation. */
+            /* animation-timeline: calc();    */
+
+            /* SHORT-HAND NOTATION FOR ANIMATION */
+
+            /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+            /* animation: 3s ease-in 1s 2 reverse both paused slide-in; */
+
+            /* @keyframes duration | easing-function | delay | name */
+            /* animation: 3s linear 1s slide-in; */
+
+            /* two animations */
+            /* animation:
+                3s linear slide-in,
+                3s ease-out 5s slide-out; */
+
+        }
+
+        @keyframes LeftMovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1050px;
+
+            }
+        }
+
+        /* @keyframes LeftMovement{
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:blueviolet; left:0px; top:0px;}
+            } */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
